@@ -1,7 +1,6 @@
-process.stdout.write('prompt > ');
-process.stdin.on('data', (data) => {
-  const cmd = data.toString().trim();
+const pwd = require('./pwd.js')
 
-  process.stdout.write('You tiped: ' + cmd);
-  process.stdout.write('\nprompt > ');
-});
+pwd()
+
+const fs = require('fs')
+
